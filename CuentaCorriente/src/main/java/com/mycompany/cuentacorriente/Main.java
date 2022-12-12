@@ -1,17 +1,22 @@
 package com.mycompany.cuentacorriente;
 
+import java.util.ArrayList;
+
 public class Main {
     
     public static void main(String [] args) {
+        ArrayList<CuentaCorriente> cuentas = new ArrayList<>();
         try {
-            Cliente c = new Cliente(28,false,false);
+            Cliente c = new Cliente(128,false,false);
             CuentaCorriente cuenta = establecerCuenta(c);
-        } catch (NewException ex) {
+            cuentas.add(cuenta);
+        } catch (DineroNegativoException | EdadFueraRangoException ex) {
             System.out.println(ex.getMessage());
         }
+        System.out.println(cuentas.toString());
     }
     
-    public static CuentaCorriente establecerCuenta(Cliente c) throws NewException{
+    public static CuentaCorriente establecerCuenta(Cliente c) throws DineroNegativoException{
         CuentaCorriente cuenta = null;
         if(c.getEdad() < 18 && c.isVivePadres() && c.isEstudiando()){
             cuenta = new Confort(0);

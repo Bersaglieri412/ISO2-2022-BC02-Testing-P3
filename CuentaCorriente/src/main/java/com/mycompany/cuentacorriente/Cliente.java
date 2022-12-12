@@ -5,7 +5,7 @@ public class Cliente {
     private int edad;
     private boolean estudiando,vivePadres;
 
-    public Cliente(int edad, boolean estudiando, boolean vivePadres) throws NewException {
+    public Cliente(int edad, boolean estudiando, boolean vivePadres) throws EdadFueraRangoException {
         this.setEdad(edad);
         this.setEstudiando(estudiando);
         this.setVivePadres(vivePadres);
@@ -15,9 +15,9 @@ public class Cliente {
         return edad;
     }
 
-    public void setEdad(int edad) throws NewException{
+    public void setEdad(int edad) throws EdadFueraRangoException{
         if(edad < 0 || edad > 100){
-            throw new NewException("Número no válido para la edad de una persona");
+            throw new EdadFueraRangoException("Número no válido para la edad de una persona");
         } 
         this.edad = edad;
     }

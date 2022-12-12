@@ -3,17 +3,17 @@ package com.mycompany.cuentacorriente;
 public class CuentaCorriente {
     private double dinero;
 
-    public CuentaCorriente(double dinero) throws NewException{
-        this.setDinero(dinero);
+    public CuentaCorriente(double dinero) throws DineroNegativoException{
+        this.ingresarDinero(dinero);
     }
 
     public double getDinero() {
         return dinero;
     }
 
-    public void setDinero(double dinero) throws NewException{
+    public void ingresarDinero(double dinero) throws DineroNegativoException{
         if(dinero < 0){
-            throw new NewException("No se puede crear una cuenta con dinero negativo");
+            throw new DineroNegativoException("No se puede ingresar a una cuenta dinero negativo");
         }
         this.dinero = dinero;
     }
