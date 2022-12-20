@@ -15,6 +15,6 @@ public class CuentaCorriente {
         if(dinero < 0){
             throw new DineroNegativoException("No se puede ingresar a una cuenta dinero negativo");
         }
-        this.dinero = dinero;
+        this.dinero += dinero;
     }
 }

@@ -1,6 +1,6 @@
 package com.mycompany.cuentacorriente;
 
-public class Cliente {
+public final class Cliente {
     
     private int edad;
     private boolean estudiando,vivePadres;
@@ -16,7 +16,7 @@ public class Cliente {
     }
 
     public void setEdad(int edad) throws EdadFueraRangoException{
-        if(edad < 0 || edad > 100){
+        if(edad <= 0 || edad >= 100){
             throw new EdadFueraRangoException("Número no válido para la edad de una persona");
         } 
         this.edad = edad;
