@@ -1,0 +1,5 @@
+com\mycompany\cuentacorriente\ControlCuentaCorriente_MCDCTest.class
+com\mycompany\cuentacorriente\ControlCuentaCorriente_PairWiseTest.class
+com\mycompany\cuentacorriente\ControlCuentaCorriente_Cob_DecisionesTest.class
+com\mycompany\cuentacorriente\ControlCuentaCorriente_EachUseTest.class
+com\mycompany\cuentacorriente\ClienteTest.class
