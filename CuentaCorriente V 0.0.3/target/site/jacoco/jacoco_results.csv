@@ -1,0 +1,13 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+CuentaCorriente,com.mycompany.cuentacorriente,CuentaCorriente,8,17,1,1,2,6,2,2,1,2
+CuentaCorriente,com.mycompany.cuentacorriente,Independizate_que_va_siendo_hora,0,10,0,0,0,4,0,2,0,2
+CuentaCorriente,com.mycompany.cuentacorriente,Ahorra_ahora_que_puedes,0,10,0,0,0,4,0,2,0,2
+CuentaCorriente,com.mycompany.cuentacorriente,Saltando_del_nido,0,10,0,0,0,4,0,2,0,2
+CuentaCorriente,com.mycompany.cuentacorriente,Cliente,0,43,0,4,0,16,0,9,0,7
+CuentaCorriente,com.mycompany.cuentacorriente,Vamos_que_tu_puedes,0,10,0,0,0,4,0,2,0,2
+CuentaCorriente,com.mycompany.cuentacorriente,Cuenta_por_defecto,0,10,0,0,0,4,0,2,0,2
+CuentaCorriente,com.mycompany.cuentacorriente,DineroNegativoException,4,0,0,0,2,0,1,0,1,0
+CuentaCorriente,com.mycompany.cuentacorriente,EdadFueraRangoException,0,4,0,0,0,2,0,1,0,1
+CuentaCorriente,com.mycompany.cuentacorriente,Bienvenido_a_la_vida_adulta,0,10,0,0,0,4,0,2,0,2
+CuentaCorriente,com.mycompany.cuentacorriente,Confort,0,10,0,0,0,4,0,2,0,2
+CuentaCorriente,com.mycompany.cuentacorriente,ControlCuentaCorriente,0,133,2,40,0,20,2,22,0,3
